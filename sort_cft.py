@@ -10,7 +10,7 @@ def main():
     if not comand_line.is_correct_paths(input_parameters):
         easygui.msgbox("Some paths isn't correct. We have to remove them, sorry.")
         input_parameters = comand_line.remove_invalid_file_paths(input_parameters)
-    correct_file.check_for_correct_data(input_parameters)
+    input_parameters['input_file_path'] = correct_file.check_for_correct_data(input_parameters)
     logic.logic(input_parameters)
 
 

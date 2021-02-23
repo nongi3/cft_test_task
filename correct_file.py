@@ -35,7 +35,6 @@ def check_for_correct_data(input_parameters):
     for file_path in have_to_sort:
         if file_path in correct_files:
             file_sort(file_path, input_parameters['order'], input_parameters['type'])
-    print(correct_files, have_to_sort)
     return correct_files
 
 
